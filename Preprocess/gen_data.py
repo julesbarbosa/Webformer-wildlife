@@ -28,7 +28,7 @@ num_words = Value('i', 0)
 TEMP_DIR = '../'
 
 from transformers import BertTokenizer, BertModel
-BertPath = '../bert_base_uncased'
+BertPath = 'bert-base-uncased'
 tag_vocab_path = '/home/yu_guo/DataPreProcess/data/tag.vocab'
 bert_tokenizer = BertTokenizer.from_pretrained(BertPath)
 

@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn import CrossEntropyLoss
-from torch.autograd import Variable
+# from torch.autograd import Variable
 import sys
-from transformers import BertConfig, BertForMaskedLM, BertModel
-from transformers.models.bert.modeling_bert import BertOnlyMLMHead
+from transformers import BertConfig, BertModel
+# from transformers.models.bert.modeling_bert import BertOnlyMLMHead
 from models.FraBert import FraBert
 import random
 import numpy as np

@@ -166,9 +166,9 @@ class HTMLStorer(object):
             g.write(str(self.idx)+'\t'+json.dumps(self.depth,ensure_ascii=False)+'\n')
 
 
-dir_path = './data/endata/'
+dir_path = './data/'
 new_dir_path = './data/endata_new_clean/'
-output_path = './data/wiki_html_all.json'
+output_path = './data/ache_html_all.json'
 if __name__ == "__main__":
     with open(output_path,'w')as g:
         for root, dirs, files in os.walk(dir_path):

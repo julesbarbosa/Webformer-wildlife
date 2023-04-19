@@ -1,32 +1,34 @@
 import logging
-import math
+# import math
 import os
 import torch
-import sys
+# import sys
 from dataclasses import dataclass, field
 from typing import Optional
-from models import FraBert
+# from models import FraBert
 from models.modeling_html import Webformer
 import sys
-from datasets import load_dataset
+# from datasets import load_dataset
 
 import transformers
 from transformers import (
-    CONFIG_MAPPING,
-    MODEL_FOR_MASKED_LM_MAPPING,
+    # CONFIG_MAPPING,
+    # MODEL_FOR_MASKED_LM_MAPPING,
     AutoConfig,
-    AutoModelForMaskedLM,
-    AutoModelForPreTraining,
-    BertForPreTraining,
-    BertForMaskedLM,
+    # AutoModelForMaskedLM,
+    # AutoModelForPreTraining,
+    # BertForPreTraining,
+    # BertForMaskedLM,
     AutoTokenizer,
-    DataCollatorForLanguageModeling,
-    DataCollatorWithPadding,
-    HfArgumentParser,
+    # DataCollatorForLanguageModeling,
+    # DataCollatorWithPadding,
+    # HfArgumentParser,
     Trainer,
     TrainingArguments,
     set_seed,
 )
+from transformers.HfArgumentParser import HfArgumentParser
+from transformers.configuration_auto import *
 from transformers.trainer_utils import is_main_process
 from mydatasets import  HBERTPointCollator, HBERTPretrainedPointWiseDataset
 from models.FraBert import FraBert
